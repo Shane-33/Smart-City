@@ -1,0 +1,61 @@
+/*
+ * © 2024 Shane. All rights reserved.
+ *
+ * This software is licensed under the Apache License, Version 2.0 (the "License").
+ * You may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ */
+
+
+/* Chatbox.css */
+
+.chatbox-container {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    /* Initially off-screen */
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+    /* Transition for sliding effect */
+}
+
+.chatbox-container.open {
+    right: 0;
+    /* Slide in when open */
+}
+
+.chatbox-header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.chatbox-content {
+    padding: 10px;
+    overflow-y: auto;
+    max-height: calc(100% - 40px);
+    /* Adjust the height as needed */
+}
+
+.chatbox-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.chatbox-content li {
+    margin-bottom: 10px;
+}

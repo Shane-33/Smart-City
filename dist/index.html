@@ -1,0 +1,52 @@
+
+<!-- <!DOCTYPE html> -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <script type="text/javascript" src="js/zip.js/zip.js"></script>
+    <script type="text/javascript" src="js/zip.js/zip-ext.js"></script>
+    <script type="text/javascript" src="js/zip.js/HttpProgressReader.js"></script>
+    <script type="text/javascript" src="https://apps.sketchfab.com/web-importer/sketchfab-importer.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+
+    <script>
+      zip.workerScriptsPath = 'js/zip.js/';
+    </script>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.20/esri/css/main.css">
+    <link rel="stylesheet" href="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.2.5/css/calcite-web.min.css">
+
+    
+
+    <link href="./index.css" rel="stylesheet">
+
+    <meta charset="utf-8" />
+    <title>Smart City</title>
+
+    <script>
+      window.dojoConfig = {
+        packages: [
+          {
+            name: "app",
+            location: document.location.pathname.replace(/\/[^/]+$/, ""),
+            main: "index/main.e2fefb38d1368ad063e8"
+          }
+        ]
+      };
+    </script>
+  </head>
+  <body id="app">
+
+    <noscript>JavaScript is required in order to use this app </noscript>
+
+    <script src="https://js.arcgis.com/4.20/"></script>
+
+    <script>
+      require(["app"], function() {});
+    </script>
+  </body>
+</html>
